@@ -1,0 +1,16 @@
+STEPS:
+
+1.LOADING DATA IN STATA
+import/ use if previously used 
+
+2. naming the variable/ variable labeling (how to read data)
+la var main_id(VARIABLE NAME) "Study ID by SRL"(LABEL)
+
+3. defining value labelling (how to define/label value of variable)
+label define bmiCAT(variable name) 0(value) "non under weight"(value name) 1 "underweight", replace
+
+4.Assigning value labelling label
+label value bmiCAT bmiCAT (variable name twice to save the label of values)
+
+
+
